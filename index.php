@@ -1,21 +1,20 @@
 <?php
-// names
+// define constants
 define('YEAR', 2016);
 define('TITLE', 'Full-Stack Web Developer');
-
-
-
+// name variables
 $first_name = "Mitch";
 $last_name = "Frechette";
 $full_name = $first_name . " " . $last_name;
 $name = $full_name;
 
-// city
-$city = "Kapuskasing";
+// city variables
+$kapuskasing = "Kapuskasing";
+$city = $kapuskasing;
 $province = "Ontario";
 $location = $city . " " . $province;
-
  ?>
+ 
 <!DOCTYPE html>
 <html>
   <head>
