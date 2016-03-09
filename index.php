@@ -1,5 +1,10 @@
 <?php
 // names
+define('YEAR', 2016);
+define('TITLE', 'Full-Stack Web Developer');
+
+
+
 $first_name = "Mitch";
 $last_name = "Frechette";
 $full_name = $first_name . " " . $last_name;
@@ -23,22 +28,8 @@ $location = $city . " " . $province;
 
     <section>
       <pre><?php
-        $greeting = "Hello Friends!\n";
-        $greeting{0} = "J";
-        $secondary_greeting = "How are you today?\n";
-        echo $greeting;
-        echo $secondary_greeting;
+        echo YEAR;
 
-        $bool = TRUE;
-        var_dump($bool);
-        $bool = FALSE;
-        var_dump($bool);
-
-        var_dump((bool) "");
-        var_dump((bool) 0);
-        var_dump((bool) 0.0);
-        var_dump((bool) array());
-        var_dump((bool) null);
       ?></pre>
     </section>
   </body>
