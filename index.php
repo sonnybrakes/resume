@@ -5,7 +5,10 @@ $last_name = "Frechette";
 $full_name = $first_name . " " . $last_name;
 $name = $full_name;
 
-$location = "Kapuskasing, Ontario";
+// city
+$city = "Kapuskasing";
+$province = "Ontario";
+$location = $city . " " . $province;
 
  ?>
 <!DOCTYPE html>
