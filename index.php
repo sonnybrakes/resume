@@ -27,11 +27,18 @@ $location = $city . " " . $province;
 
     <section>
       <pre><?php
-        $array_example = array();
-        $eye_color = array('blue', 'brown', 'green');
-        print_r($eye_color);
-        $eye_color[1] = 'hazel';
-        echo $eye_color[1];
+        // $array_example = array();
+
+        $eye_color = array(
+          'dad' => 'blue',
+          'jack' => 'brown',
+          'maddy' => 'green'
+        );
+        $eye_color['dad'] = 'green';
+        echo $eye_color['dad'];
+        // print_r($eye_color);
+        // $eye_color[1] = 'hazel';
+        // echo $eye_color[1];
       ?></pre>
     </section>
   </body>
