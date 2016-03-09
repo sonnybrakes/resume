@@ -36,7 +36,7 @@ $location = $city . " " . $province;
         <li><?php echo gettype($one); ?></li>
         <li><?php echo gettype($string_one); ?></li>
         <li><?php echo gettype($one + $two); ?></li>
-        <li><?php echo gettype($distance_to_school + $distance_to_home); ?></li>
+        <li><?php echo $distance_to_school + $distance_to_home; ?></li>
       </ul>
     </section>
   </body>
