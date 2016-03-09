@@ -28,6 +28,17 @@ $location = $city . " " . $province;
         $secondary_greeting = "How are you today?\n";
         echo $greeting;
         echo $secondary_greeting;
+
+        $bool = TRUE;
+        var_dump($bool);
+        $bool = FALSE;
+        var_dump($bool);
+
+        var_dump((bool) "");
+        var_dump((bool) 0);
+        var_dump((bool) 0.0);
+        var_dump((bool) array());
+        var_dump((bool) null);
       ?></pre>
     </section>
   </body>
