@@ -14,7 +14,7 @@ $city = $kapuskasing;
 $province = "Ontario";
 $location = $city . " " . $province;
  ?>
- 
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -27,8 +27,11 @@ $location = $city . " " . $province;
 
     <section>
       <pre><?php
-        echo YEAR;
-
+        $array_example = array();
+        $eye_color = array('blue', 'brown', 'green');
+        print_r($eye_color);
+        $eye_color[1] = 'hazel';
+        echo $eye_color[1];
       ?></pre>
     </section>
   </body>
