@@ -27,19 +27,21 @@ $location = $city . " " . $province;
 
     <section>
       <pre><?php
-        // $array_example = array();
+        $a = 10;
+        $b = 10;
+        $sum = $a + $b;
+        $diff = $a - $b;
+        $product = $a * $b;
+        $quotient = $a / $b;
 
-        $eye_color = array(
-          'dad' => 'blue',
-          'jack' => 'brown',
-          'maddy' => 'green'
-        );
-        $eye_color['dad'] = 'green';
-        echo $eye_color['dad'];
-        // print_r($eye_color);
-        // $eye_color[1] = 'hazel';
-        // echo $eye_color[1];
+        $product++;
       ?></pre>
+      <ul>
+        <li><?php echo $sum; ?></li>
+        <li><?php echo $diff; ?></li>
+        <li><?php echo $product; ?></li>
+        <li><?php echo $quotient; ?></li>
+      </ul>
     </section>
   </body>
 </html>
