@@ -3,12 +3,13 @@
 define('USE_FULL_NAME', TRUE);
 define('YEAR', 2016);
 define('TITLE', 'Full-Stack Web Developer');
+define('MAX_BADGES', 20);
 // name variables
 $first_name = "Mitch";
 $last_name = "Frechette";
-$role = 'Teacher';
-$role = "Student";
-$role = 'Guest';
+// $role = 'Teacher';
+// $role = "Student";
+// $role = 'Guest';
 // city variables
 $kapuskasing = "Kapuskasing";
 $city = $kapuskasing;
@@ -21,13 +22,13 @@ if( USE_FULL_NAME == TRUE ){
   $name = $first_name;
 }
 
-if( $role == 'Student'){
-  $info = "I am a Student at Treehouse";
-} elseif ( $role == 'Teacher') {
-  $info = "I am a Teacher at Treehouse";
-} else {
-  $info = "I am a Guest of Treehouse";
-}
+// if( $role == 'Student'){
+//   $info = "I am a Student at Treehouse";
+// } elseif ( $role == 'Teacher') {
+//   $info = "I am a Teacher at Treehouse";
+// } else {
+//   $info = "I am a Guest of Treehouse";
+// }
 
  ?>
 
@@ -40,11 +41,13 @@ if( $role == 'Student'){
   <body>
     <h1><?php echo $name ?></h1>
     <h2><?php echo $location ?></h2>
-    <h3><?php echo $info ?></h3>
+    <!-- <h3><?php echo $info ?></h3> -->
     <section>
-      <pre><?php
-
-      ?></pre>
+      <ul><?php
+        for($counter = 0; $counter <= MAX_BADGES; $counter++){
+          echo "<li>" . $counter . "</li>";
+        }
+      ?></ul>
 
     </section>
   </body>
