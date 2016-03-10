@@ -1,18 +1,21 @@
-<?php
+ <?php
 // define constants
+define('USE_FULL_NAME', TRUE);
 define('YEAR', 2016);
 define('TITLE', 'Full-Stack Web Developer');
 // name variables
 $first_name = "Mitch";
 $last_name = "Frechette";
-$full_name = $first_name . " " . $last_name;
-$name = $full_name;
 
 // city variables
 $kapuskasing = "Kapuskasing";
 $city = $kapuskasing;
 $province = "Ontario";
 $location = $city . " " . $province;
+
+if( USE_FULL_NAME == TRUE ){
+  $name = $first_name . ' ' . $last_name;
+}
  ?>
 
 <!DOCTYPE html>
