@@ -27,19 +27,13 @@ $location = $city . " " . $province;
 
     <section>
       <pre><?php
-        $a = 10;
-        $b = 10;
-        $c = 20;
-        $d = "10";
+        $a = TRUE;
+        $b = FALSE;
 
-        var_dump( $a == $d);  // double == is equal in value only
-        var_dump( $a === $b);  // triple === must be identical in value and in type
-        var_dump( $a != $b); // not equal
-        var_dump( $a !== $b); // not identical
-        
-        var_dump( $a >= $b);
-        var_dump( $a <= $b);
-        var_dump( $c >! $b);
+        var_dump( $a and $b);
+        var_dump( $a or $b and $a);
+        var_dump( ! $a ); // not!
+
       ?></pre>
 
     </section>
