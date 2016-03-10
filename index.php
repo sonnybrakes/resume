@@ -36,6 +36,10 @@ $location = $city . " " . $province;
         var_dump( $a === $b);  // triple === must be identical in value and in type
         var_dump( $a != $b); // not equal
         var_dump( $a !== $b); // not identical
+        
+        var_dump( $a >= $b);
+        var_dump( $a <= $b);
+        var_dump( $c >! $b);
       ?></pre>
 
     </section>
