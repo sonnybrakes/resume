@@ -6,7 +6,9 @@ define('TITLE', 'Full-Stack Web Developer');
 // name variables
 $first_name = "Mitch";
 $last_name = "Frechette";
-
+$role = 'Teacher';
+$role = "Student";
+$role = 'Guest';
 // city variables
 $kapuskasing = "Kapuskasing";
 $city = $kapuskasing;
@@ -15,7 +17,18 @@ $location = $city . " " . $province;
 
 if( USE_FULL_NAME == TRUE ){
   $name = $first_name . ' ' . $last_name;
+} else {
+  $name = $first_name;
 }
+
+if( $role == 'Student'){
+  $info = "I am a Student at Treehouse";
+} elseif ( $role == 'Teacher') {
+  $info = "I am a Teacher at Treehouse";
+} else {
+  $info = "I am a Guest of Treehouse";
+}
+
  ?>
 
 <!DOCTYPE html>
@@ -27,15 +40,9 @@ if( USE_FULL_NAME == TRUE ){
   <body>
     <h1><?php echo $name ?></h1>
     <h2><?php echo $location ?></h2>
-
+    <h3><?php echo $info ?></h3>
     <section>
       <pre><?php
-        $a = TRUE;
-        $b = FALSE;
-
-        var_dump( $a and $b);
-        var_dump( $a or $b and $a);
-        var_dump( ! $a ); // not!
 
       ?></pre>
 
